@@ -17,12 +17,12 @@
   <body>
     <div class="left-page">
       <div class="bg-transparent">
-        <img src="odin-lined.png" alt="odin photo" />
+        <img src="/images/odin-lined.png" alt="odin photo" />
         <h1>ODIN</h1>
       </div>
     </div>
     <div class="right-page">
-      <div class="header">
+      <div class="hero">
         <p>
           This is not a real online service! You kow you need something like
           this in your life to help you realize your deepest dreams.<br />
@@ -32,73 +32,45 @@
       </div>
 
       <form action="#" method="post">
-        <h2>Let's do this!</h2>
-        <div class="fields">
-          <fieldset>
-            <label for="first-name">First Name*</label>
-            <input
-              type="text"
-              name="first-name"
-              id="first-name"
-              placeholder="John"
-              required
-            />
+        <div class="container">
+          <h2>Let's do this!</h2>
+          <div class="fields">
+            <fieldset>
+              <label for="first-name">First Name*</label>
+              <input type="text" name="first-name" id="first-name" required />
 
-            <label for="last-name">Last Name*</label>
-            <input
-              type="text"
-              name="last-name"
-              id="last-name"
-              placeholder="Doe"
-              required
-            />
-          </fieldset>
+              <label for="last-name">Last Name*</label>
+              <input type="text" name="last-name" id="last-name" required />
+            </fieldset>
 
-          <fieldset>
-            <label for="email">Email*</label>
-            <input
-              type="email"
-              name="Email"
-              id="Email"
-              placeholder="john.doe@gmail.com"
-              required
-            />
+            <fieldset>
+              <label for="email">Email*</label>
+              <input type="email" name="Email" id="Email" required />
 
-            <label for="phone-number">Phone number</label>
-            <input
-              type="text"
-              name="phone-number"
-              id="phone-number"
-              placeholder="0697848443"
-            />
-          </fieldset>
+              <label for="phone-number">Phone number</label>
+              <input type="text" name="phone-number" id="phone-number" />
+            </fieldset>
 
-          <fieldset>
-            <label for="password">Password*</label>
-            <input
-              type="password"
-              name="password"
-              id="password"
-              placeholder="********"
-              required
-            />
+            <fieldset>
+              <label for="password">Password*</label>
+              <input type="password" name="password" id="password" required />
 
-            <label for="password-confirm">Confirm password*</label>
-            <input
-              type="password"
-              name="password-confirm"
-              id="password-confirm"
-              placeholder="********"
-              required
-            />
-          </fieldset>
+              <label for="password-confirm">Confirm password*</label>
+              <input
+                type="password"
+                name="password-confirm"
+                id="password-confirm"
+                required
+              />
+            </fieldset>
+          </div>
+          <p id="required-fields">* Required fields</p>
         </div>
-        <p id="required-fields">* Required fields</p>
+        <div class="bottom-page">
+          <button type="submit" id="submit-button">Create Account</button>
+          <p>Already have an account? <a href="#">Log in</a></p>
+        </div>
       </form>
-      <div class="bottom-page">
-        <button type="submit" id="submit-button">Create Account</button>
-        <p>Already have an account? <a href="#">Log in</a></p>
-      </div>
     </div>
   </body>
 </html>

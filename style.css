@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Norse;
+  src: url(./fonts/Norse-Bold.otf);
+}
+
 html,
 body {
   display: flex;
@@ -11,21 +16,64 @@ body {
 h1 {
   color: white;
   font-size: 40px;
+  font-family: Norse;
+  font-size: 5rem;
+}
+
+input {
+  border-radius: 5px;
+  height: 30px;
+  width: 200px;
+  border-style: solid;
+  margin-bottom: 3rem;
+}
+
+label {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+
+fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.container {
+  padding: 4rem;
+  background-color: white;
+  box-shadow: 0 8px 16px 0 rgba(197, 197, 197, 0.2),
+    0 6px 20px 0 rgba(197, 197, 197, 0.19);
+}
+
+.fields {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .left-page {
-  background-image: url(wallpaper.jpg);
+  background-image: url(/images/wallpaper.jpg);
+  background-size: cover;
   display: flex;
-  padding: 100px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .bg-transparent {
   display: flex;
   gap: 30px;
   align-items: center;
+  justify-content: center;
+  background-color: rgb(0, 0, 0, 0.5);
+  height: fit-content;
+  width: 100%;
+  padding: 2rem;
 }
 
-.bg-transparent > img {
+.bg-transparent img {
   width: 100px;
 }
 
@@ -37,41 +85,25 @@ h1 {
   width: 100%;
 }
 
-form {
-  background-color: white;
-  padding: 2rem;
-  margin-bottom: 30px;
-  box-shadow: 0 8px 16px 0 rgba(197, 197, 197, 0.2),
-    0 6px 20px 0 rgba(197, 197, 197, 0.19);
+.hero {
+  margin: 0 4rem;
+  margin-bottom: 50px;
 }
 
-.header {
-  margin-left: 40px;
-}
-
-.header p {
+.hero p {
   font-size: 2rem;
   font-weight: 600;
 }
 
-fieldset {
-  border: none;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-
-.fields {
-  display: flex;
-}
-
 #submit-button {
+  margin-top: 2vh;
+  font-size: 1.2rem;
   width: fit-content;
   padding: 10px 20px;
   background-color: green;
   border: none;
   border-radius: 5px;
-  font-weight: 800;
+  font-weight: 600;
   color: white;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -85,20 +117,12 @@ fieldset {
   margin-left: 40px;
 }
 
+.bottom-page button {
+  margin-bottom: 20px;
+}
+
 #required-fields {
   color: rgb(68, 68, 68);
   font-weight: 200;
   font-size: 0.8rem;
-}
-
-input {
-  border-radius: 5px;
-  height: 30px;
-  width: 200px;
-}
-
-label {
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 0.9rem;
 }
