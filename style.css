@@ -1,0 +1,104 @@
+html,
+body {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Inter", sans-serif;
+}
+
+h1 {
+  color: white;
+  font-size: 40px;
+}
+
+.left-page {
+  background-image: url(wallpaper.jpg);
+  display: flex;
+  padding: 100px;
+}
+
+.bg-transparent {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.bg-transparent > img {
+  width: 100px;
+}
+
+.right-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: whitesmoke;
+  width: 100%;
+}
+
+form {
+  background-color: white;
+  padding: 2rem;
+  margin-bottom: 30px;
+  box-shadow: 0 8px 16px 0 rgba(197, 197, 197, 0.2),
+    0 6px 20px 0 rgba(197, 197, 197, 0.19);
+}
+
+.header {
+  margin-left: 40px;
+}
+
+.header p {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.fields {
+  display: flex;
+}
+
+#submit-button {
+  width: fit-content;
+  padding: 10px 20px;
+  background-color: green;
+  border: none;
+  border-radius: 5px;
+  font-weight: 800;
+  color: white;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#submit-button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.bottom-page {
+  margin-left: 40px;
+}
+
+#required-fields {
+  color: rgb(68, 68, 68);
+  font-weight: 200;
+  font-size: 0.8rem;
+}
+
+input {
+  border-radius: 5px;
+  height: 30px;
+  width: 200px;
+}
+
+label {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
